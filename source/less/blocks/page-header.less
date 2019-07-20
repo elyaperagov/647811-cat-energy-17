@@ -1,6 +1,11 @@
 .page-header {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablets) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
 
 .page-header__wrapper {
@@ -9,5 +14,13 @@
 }
 
 .page-header__logo {
-  width: 100%;
+  width: 191px;
+
+  @media (min-width: @tablets) {
+    width: 174px;
+  }
+
+  @media (min-width: @desktops) {
+    width: 203px;
+  }
 }
