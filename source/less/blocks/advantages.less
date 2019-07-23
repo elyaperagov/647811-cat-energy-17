@@ -5,3 +5,48 @@
 .advantages__list {
   .list();
 }
+
+.advantages__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+
+  &--leaf::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--powder::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--dining::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--clock::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
+.advantages__desc {
+  font-family: "Arial", sans-serif;
+}
