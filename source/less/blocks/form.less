@@ -1,0 +1,88 @@
+.form {
+  .wrapper();
+}
+
+.form__list {
+  .list();
+}
+
+.form__title {
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.form__title::after {
+  content: "";
+  position: absolute;
+  background-color: #68b738;
+  width: 99px;
+  height: 3px;
+  right: 0;
+}
+
+.form__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.form__input {
+  flex-grow: 1;
+  min-height: 45px;
+
+  &::placeholder {
+    text-transform: uppercase;
+  }
+}
+
+/*ПЕРСОНАЛЬНЫЕ ДАННЫЕ*/
+
+.form__label {
+  margin-right: 15px;
+}
+/*ЦЕЛЬ*/
+
+input[type="radio"] {
+  .visually-hidden();
+}
+/*
+.form__item {
+  position: relative;
+  padding-bottom: 13px;
+}*/
+
+.form__radio + label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: solid 1px #cdcdcd;
+  border-radius: 50%;
+}
+
+.form__radio:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #68b738;
+  border-radius: 50%;
+  left: 0;
+  margin: 9px;
+}
+
+.form__text {
+  text-transform: uppercase;
+  padding-left: 46px;
+}
+
+/*TEXTAREA*/
+.form__text::placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}

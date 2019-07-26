@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+formformform<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -34,17 +34,118 @@
           </ul>
       </nav>
     </header>
-    <main class="main-selection">
-      <!--<div class="main-selection__background">
-        <div class="main-selection__common  main-selection__common--mod">-->
-      <h1 class="main-selection__title">Подбор программы</h1>
-      <!--  </div>
-      </div>-->
-        <div class="main-selection__desc">
-          <p class="main-selection__paragraph">
-          Заполните анкету и мы подберем программу питания для вашего кота
-          </p>
+    <main>
+      <div class="selection-title">
+        <!--<div class="main-selection__background">
+          <div class="main-selection__common  main-selection__common--mod">-->
+        <h1 class="selection-title__header">Подбор программы</h1>
+        <!--  </div>
+        </div>-->
+          <div class="selection-title__desc">
+            <p class="selection-title__paragraph">
+            Заполните анкету и мы подберем программу питания для вашего кота
+            </p>
+          </div>
         </div>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__personal">
+            <div class="form__inner">
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label" for="name">ИМЯ*</label><br>
+                  <input class="form__input" type="text" name="name" placeholder="БАРСИК" id="name" required="">
+                </li>
+                <li class="form__item">
+                  <label class="form__label" for="weight">ВЕС (КГ)*</label><br>
+                  <input class="form__input" type="text" name="weight" placeholder="7*" id="weight" required="">
+                </li>
+                <li class="form__item">
+                  <label class="form__label" for="age">ВОЗРАСТ (ЛЕТ)*</label><br>
+                  <input class="form__input" type="text" id="age" name="age" placeholder="7">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="form__purpose">
+            <div class="form__inner">
+              <ul class="form__list">
+                <li class="form__item">
+                  <input class="form__radio" type="radio" id="weightloss" name="form" value="weightloss" checked="">
+                  <label for="weightloss"><span class="form__text">Похудение</span></label>
+                </li>
+                <li class="form__item">
+                  <input class="form__radio" type="radio" id="weightgain" name="form" value="weightgain">
+                  <label for="weightgain"><span class="form__text">Набор массы</span></label>
+                </li>
+                <li class="form__item">
+                  <input class="form__radio" type="radio" id="noinfo" name="form" value="noinfo">
+                  <label for="noinfo"><span class="form__text">Не знаю (нужен ваш совет)</span></label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="form__contacts">
+            <div class="form__inner">
+              <h2 class="form__title">Контактные данные <br>(владельца кота)</h2>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label" for="name">E-mail</label>
+                  <input class="form__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" id="e-mail" required="">
+                </li>
+                <li class="form__item">
+                  <label class="form__label" for="lastname">Телефон</label>
+                  <input class="form__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="phone">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="form__textarea">
+            <div class="form__inner">
+              <p class="form__title">Комментарий</p>
+              <div class="form__inner">
+                <textarea class="form__text" placeholder="Расскажите обо всех повадках кота" name="text"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="form__additional">
+            <div class="form__inner">
+              <p class="form__title">Дополнительно</p>
+              <div class="form__list">
+                <div class="form__wrapper">
+                <div tabindex="0" class="form__item">
+                  <input class="form__checkbox" id="sugar" type="checkbox" name="additional" checked>
+                  <label for="sugar"><span class="form__text">Сахарозаменитель</span></label>
+                </div>
+                <div tabindex="0" class="form__item">
+                  <input class="form__checkbox" id="water" type="checkbox" name="additional" checked>
+                  <label for="water"><span class="form__text">Питьевая вода</span></label>
+                </div>
+                </div>
+                <div class="form__wrapper">
+                <div tabindex="0" class="form__item">
+                  <input class="form__checkbox" id="milk" type="checkbox" name="additional">
+                  <label for="milk"><span class="form__text">Молоко</span></label>
+                </div>
+                <div tabindex="0" class="form__item">
+                  <input class="form__checkbox" id="vitamins" type="checkbox" name="additional">
+                  <label for="vitamins"><span class="form__text">Витамины</span></label>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="send">
+            <div class="send__inner">
+              <div class="send__form">
+              <button class="send__button">
+                <span class="send__desc">Отправить форму</span>
+              </button>
+              <div class="send__required">* — ОБЯЗАТЕЛЬНЫЕ <span class="send__required send__required--hidden">ДЛЯ ЗАПОЛНЕНИЯ </span> ПОЛЯ</div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <!--
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <div class="personal">
             <div class="personal__inner">
@@ -84,30 +185,23 @@
           </div>
           <div class="contacts">
             <div class="contacts__inner">
+              <h2 class="form__title">Контактные данные <br>(владельца кота)</h2>
               <ul class="contacts__list">
                 <li class="contacts__item">
-                  <div class="contacts__label-wrapper">
-                  <label class="contacts__label" for="name">E-mail</label><br>
-                  </div>
-                  <div class="contacts__input contacts__input--email">
-                    <input class="contacts__input-text" type="email" name="e-mail" placeholder="kuklachev@gmail.com" id="e-mail" required="">
-                  </div>
+                  <label class="contacts__label" for="name">E-mail</label>
+                  <input class="contacts__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" id="e-mail" required="">
                 </li>
                 <li class="contacts__item">
-                  <div class="contacts__label-wrapper">
-                    <label class="contacts__label" for="lastname">Телефон</label><br>
-                  </div>
-                  <div class="contacts__input contacts__input--phone">
-                    <input class="contacts__input-text " type="tel" name="phone" placeholder="8 (960) 900-60-90" id="phone">
-                  </div>
+                  <label class="contacts__label" for="lastname">Телефон</label>
+                  <input class="contacts__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="phone">
                 </li>
               </ul>
             </div>
           </div>
           <div class="textarea">
             <div class="textarea__inner">
-              <p class="textarea__legend">Комментарий</p>
-              <div class="textarea__wrapper">
+              <p class="form__title">Комментарий</p>
+              <div class="textarea__inner">
                 <textarea class="textarea__text" placeholder="Расскажите обо всех повадках кота" name="text"></textarea>
               </div>
             </div>
@@ -140,7 +234,7 @@
             </div>
           </div>
           <div class="send">
-            <div class="form__inner">
+            <div class="send__inner">
               <div class="send__form">
               <button class="send__button">
                 <span class="send__desc">Отправить форму</span>
@@ -149,7 +243,7 @@
               </div>
             </div>
           </div>
-        </form>
+        </form>-->
       </main>
       <footer class="page-footer">
         <div class="page-footer__wrapper">
