@@ -1,11 +1,18 @@
-.catalog {
+.catalog__inner {
   .wrapper();
+  width: 100%;
 }
 
 .catalog__list {
   .list();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 -30px;
+  padding: 0;
 
-  @media (min-width: @tablets) {
+  @media (min-width: @desktops) {
+    margin: 0 -40px;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -13,8 +20,21 @@
 }
 
 .catalog__item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 320px; // если нужна фикс ширина карточки то 1 меняешь на 0, сейчас они тянутся, но не сжимаются меньше 320px
+  min-height: 210px;
+  padding: 0 30px;
+
+  @media (min-width: @desktops) {
+    padding: 0 40px;
+    flex-basis: 245px;
+  }
+}
+/*
+.catalog__item {
   @media (min-width: @tablets) {
-    max-width: 324px;
+    max-width: 324px;*
     background-color: #f2f2f2;
 
     &:nth-child(odd) {
@@ -35,7 +55,7 @@
     }
   }
 }
-
+*/
 .catalog__title {
   font-size: 36px;
   line-height: 60px;
