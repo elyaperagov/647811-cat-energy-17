@@ -10,12 +10,12 @@
   justify-content: space-around;
   margin: 0 -30px;
   padding: 0;
+  align-items: baseline;
 
   @media (min-width: @desktops) {
     margin: 0 -40px;
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
   }
 }
 
@@ -23,8 +23,13 @@
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 320px; // если нужна фикс ширина карточки то 1 меняешь на 0, сейчас они тянутся, но не сжимаются меньше 320px
-  min-height: 210px;
+  min-height: 209px;
   padding: 0 30px;
+  border-top: solid 1px #ededed;
+
+  @media (min-width: @tablets) {
+    border-top: none;
+  }
 
   @media (min-width: @desktops) {
     padding: 0 40px;
@@ -60,5 +65,5 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
 }
