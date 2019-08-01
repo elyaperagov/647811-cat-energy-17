@@ -1,4 +1,4 @@
-formformform<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -35,112 +35,104 @@ formformform<!DOCTYPE html>
       </nav>
     </header>
     <main>
-      <div class="selection-title">
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <!--<div class="main-selection__background">
           <div class="main-selection__common  main-selection__common--mod">-->
-        <h1 class="selection-title__header">Подбор программы</h1>
+        <h1 class="form__main-title">Подбор программы</h1>
         <!--  </div>
         </div>-->
-          <div class="selection-title__desc">
-            <p class="selection-title__paragraph">
-            Заполните анкету и мы подберем программу питания для вашего кота
-            </p>
-          </div>
-        </div>
-        <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__personal">
-            <div class="form__inner">
-              <ul class="form__list">
-                <li class="form__item">
-                  <label class="form__label" for="name">ИМЯ*</label><br>
-                  <input class="form__input" type="text" name="name" placeholder="БАРСИК" id="name" required="">
-                </li>
-                <li class="form__item">
-                  <label class="form__label" for="weight">ВЕС (КГ)*</label><br>
-                  <input class="form__input" type="text" name="weight" placeholder="7*" id="weight" required="">
-                </li>
-                <li class="form__item">
-                  <label class="form__label" for="age">ВОЗРАСТ (ЛЕТ)*</label><br>
-                  <input class="form__input" type="text" id="age" name="age" placeholder="7">
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="form__purpose">
-            <div class="form__inner">
-              <ul class="form__list">
-                <li class="form__item">
-                  <input class="form__radio" type="radio" id="weightloss" name="form" value="weightloss" checked="">
-                  <label for="weightloss"><span class="form__text">Похудение</span></label>
-                </li>
-                <li class="form__item">
-                  <input class="form__radio" type="radio" id="weightgain" name="form" value="weightgain">
-                  <label for="weightgain"><span class="form__text">Набор массы</span></label>
-                </li>
-                <li class="form__item">
-                  <input class="form__radio" type="radio" id="noinfo" name="form" value="noinfo">
-                  <label for="noinfo"><span class="form__text">Не знаю (нужен ваш совет)</span></label>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="form__contacts">
-            <div class="form__inner">
-              <h2 class="form__title">Контактные данные <br>(владельца кота)</h2>
-              <ul class="form__list">
-                <li class="form__item">
-                  <label class="form__label" for="name">E-mail</label>
-                  <input class="form__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" id="e-mail" required="">
-                </li>
-                <li class="form__item">
-                  <label class="form__label" for="lastname">Телефон</label>
-                  <input class="form__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="phone">
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="form__textarea">
-            <div class="form__inner">
-              <p class="form__title">Комментарий</p>
+        <div class="form__container">
+          <p class="form__desc">
+          Заполните анкету и мы подберем <br>программу питания для вашего кота
+          </p>
+            <div class="form__personal">
               <div class="form__inner">
-                <textarea class="form__text" placeholder="Расскажите обо всех повадках кота" name="text"></textarea>
+                <ul class="form__list form__list--personal">
+                  <li class="form__item">
+                    <label class="form__label form__label--name" for="name">ИМЯ:*</label><br>
+                    <input class="form__input" type="text" name="name" placeholder="БАРСИК" id="name" required="">
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label form__label--weight" for="weight">ВЕС (КГ):*</label><br>
+                    <input class="form__input" type="text" name="weight" placeholder="7*" id="weight" required="">
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label form__label--age" for="age">ВОЗРАСТ (ЛЕТ):*</label><br>
+                    <input class="form__input" type="text" id="age" name="age" placeholder="7">
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
-          <div class="form__additional">
-            <div class="form__inner">
-              <p class="form__title">Дополнительно</p>
-              <div class="form__list">
-                <div class="form__wrapper">
-                <div tabindex="0" class="form__item">
-                  <input class="form__checkbox" id="sugar" type="checkbox" name="additional" checked>
-                  <label for="sugar"><span class="form__text">Сахарозаменитель</span></label>
-                </div>
-                <div tabindex="0" class="form__item">
-                  <input class="form__checkbox" id="water" type="checkbox" name="additional" checked>
-                  <label for="water"><span class="form__text">Питьевая вода</span></label>
-                </div>
-                </div>
-                <div class="form__wrapper">
-                <div tabindex="0" class="form__item">
-                  <input class="form__checkbox" id="milk" type="checkbox" name="additional">
-                  <label for="milk"><span class="form__text">Молоко</span></label>
-                </div>
-                <div tabindex="0" class="form__item">
-                  <input class="form__checkbox" id="vitamins" type="checkbox" name="additional">
-                  <label for="vitamins"><span class="form__text">Витамины</span></label>
-                </div>
-                </div>
+            <div class="form__purpose">
+              <div class="form__inner">
+                <ul class="form__list form__list--purpose">
+                  <li class="form__item form__item--purpose">
+                    <input class="form__radio" type="radio" id="weightloss" name="form" value="weightloss" checked="">
+                    <label for="weightloss" class="form__label form__label--purpose">Похудение</label>
+                  </li>
+                  <li class="form__item form__item--purpose">
+                    <input class="form__radio" type="radio" id="weightgain" name="form" value="weightgain">
+                    <label for="weightgain" class="form__label form__label--purpose">Набор массы</label>
+                  </li>
+                  <li class="form__item form__item--purpose">
+                    <input class="form__radio" type="radio" id="noinfo" name="form" value="noinfo">
+                    <label for="noinfo" class="form__label form__label--purpose">Не знаю (нужен ваш совет)</label>
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
-          <div class="send">
-            <div class="send__inner">
-              <div class="send__form">
-              <button class="send__button">
-                <span class="send__desc">Отправить форму</span>
-              </button>
-              <div class="send__required">* — ОБЯЗАТЕЛЬНЫЕ <span class="send__required send__required--hidden">ДЛЯ ЗАПОЛНЕНИЯ </span> ПОЛЯ</div>
+            <div class="form__contacts">
+              <div class="form__inner">
+                <h2 class="form__title form__title--contacts">Контактные данные <br>(владельца кота)</h2>
+                <ul class="form__list form__list--contacts">
+                  <li class="form__item form__item--email">
+                    <label class="form__label form__label--email" for="e-mail">E-mail:*</label>
+                    <input class="form__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" id="e-mail" required="">
+                  </li>
+                  <li class="form__item form__item--phone">
+                    <label class="form__label form__label--phone" for="lastname">Телефон:*</label>
+                    <input class="form__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="phone">
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="form__textarea">
+              <div class="form__inner">
+                <p class="form__title form__title--commentary">Комментарий</p>
+                  <textarea class="form__text" placeholder="Расскажите обо всех повадках кота" name="text"></textarea>
+              </div>
+            </div>
+            <div class="form__additional">
+              <div class="form__inner">
+                <p class="form__title form__title--additional">Дополнительно</p>
+                <div class="form__list form__list--additional">
+                  <div tabindex="0" class="form__item form__item--checkbox">
+                    <input class="form__checkbox" id="sugar" type="checkbox" name="additional" checked>
+                    <label for="sugar" class="form__label form__label--checkbox">Сахарозаменитель</label>
+                  </div>
+                  <div tabindex="0" class="form__item form__item--checkbox">
+                    <input class="form__checkbox" id="water" type="checkbox" name="additional" checked>
+                    <label for="water" class="form__label form__label--checkbox">Питьевая вода</label>
+                  </div>
+                  <div tabindex="0" class="form__item form__item--checkbox">
+                    <input class="form__checkbox" id="milk" type="checkbox" name="additional">
+                    <label for="milk" class="form__label form__label--checkbox">Молоко</label>
+                  </div>
+                  <div tabindex="0" class="form__item form__item--checkbox">
+                    <input class="form__checkbox" id="vitamins" type="checkbox" name="additional">
+                    <label for="vitamins" class="form__label form__label--checkbox">Витамины</label>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            <div class="form__send">
+              <div class="form__inner form__inner--button">
+                <div class="form__button-wrapper">
+                  <button class="form__button btn">
+                    <span class="form__desc form__desc--button">Отправить заявку</span>
+                  </button>
+                </div>
+                <div class="form__required">* — Обязательные поля</div>
               </div>
             </div>
           </div>
@@ -289,8 +281,8 @@ formformform<!DOCTYPE html>
           <div class="copyright">
             <p class="copyright__title">HTML Academy</p>
             <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-              <svg width="26.943px" height="34.09px" class="copyright__icon">
-                <use xlink:href="#icon-htmlacademy"></use>
+              <svg width="26.943px" height="34.09px" class="copyright__icon" viewBox="0 0 60 60">
+                <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
               </svg>
             </a>
           </div>
