@@ -8,6 +8,8 @@
   }
 }
 
+/*СПИСКИ*/
+
 .form__list {
   .list();
   border-bottom: 1px solid #ededed;
@@ -19,6 +21,12 @@
   &--personal {
     padding-bottom: 8px;
 
+    @media (max-width: @mobiles-max) {
+      .wrapper();
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+
     @media (min-width: @tablets) {
       padding-bottom: 52px;
     }
@@ -27,7 +35,12 @@
   &--purpose {
     padding-top: 22px;
     padding-bottom: 8px;
-    border: solid 1px #cdcdcd;
+
+    @media (max-width: @mobiles-max) {
+      .wrapper();
+      margin-left: -20px;
+      margin-right: -20px;
+    }
 
     @media (min-width: @tablets) {
       padding-bottom: 0;
@@ -68,6 +81,24 @@
   }
 }
 
+/*ЗАГОЛОВКИ*/
+.form__title + span {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  display: block;
+  transform: translateY(-5px);
+  background-color: #ffffff;
+
+  @media (min-width: @tablets) {
+    font-size: 36px;
+    line-height: 36px;
+    display: inline-block;
+    transform: none;
+    padding-right: 41px;
+  }
+}
+
 .form__title {
   position: relative;
   font-size: 24px;
@@ -95,7 +126,7 @@
     z-index: -1;
     height: 3px;
     left: 0;
-    transform: translateY(-10px);
+    transform: translateY(14px);
 
     @media (min-width: @tablets) {
       transform: translateY(22px);
@@ -116,13 +147,15 @@
     }
 
   &--contacts {
+    padding-right: 0;
+
     @media (min-width: @tablets) {
     padding-top: 77px;
     }
   }
 
   &--commentary {
-    padding-top: 10px;
+    padding-top: 13px;
     padding-bottom: 35px;
 
     @media (min-width: @tablets) {
@@ -154,7 +187,7 @@
   align-items: center;
   text-transform: uppercase;
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 
   @media (min-width: @tablets) {
     padding-bottom: 20px;
