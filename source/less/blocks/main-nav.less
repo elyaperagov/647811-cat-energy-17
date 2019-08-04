@@ -1,6 +1,4 @@
 .main-nav {
-  .wrapper();
-
   @media (max-width: @mobiles-max) {
   margin-left: -20px;
   margin-right: -20px;
@@ -19,11 +17,17 @@
   font-weight: 500;
   text-transform: uppercase;
   white-space: nowrap;
+
+  @media (min-width: @tablets) {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+  }
 }
 
 .main-nav__item {
   min-height: 65px;
-  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
   padding: 20px 0;
 
   @media (min-width: @tablets) {
