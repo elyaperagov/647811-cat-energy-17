@@ -99,21 +99,21 @@
             <div class="form__additional">
             <p class="form__title form__title--additional">Дополнительно</p>
               <div class="form__list form__list--additional">
-                <div tabindex="0" class="form__item form__item--checkbox">
+                <div class="form__item form__item--checkbox">
                   <input class="form__checkbox" id="sugar" type="checkbox" name="additional" checked>
-                  <label for="sugar" class="form__label form__label--checkbox">Сахарозаменитель</label>
+                  <label tabindex="0" for="sugar" class="form__label form__label--checkbox">Сахарозаменитель</label>
                 </div>
-                <div tabindex="0" class="form__item form__item--checkbox">
+                <div class="form__item form__item--checkbox">
                   <input class="form__checkbox" id="water" type="checkbox" name="additional" checked>
-                  <label for="water" class="form__label form__label--checkbox">Питьевая вода</label>
+                  <label tabindex="0" for="water" class="form__label form__label--checkbox">Питьевая вода</label>
                 </div>
-                <div tabindex="0" class="form__item form__item--checkbox">
+                <div class="form__item form__item--checkbox">
                   <input class="form__checkbox" id="milk" type="checkbox" name="additional">
-                  <label for="milk" class="form__label form__label--checkbox">Молоко</label>
+                  <label tabindex="0" for="milk" class="form__label form__label--checkbox">Молоко</label>
                 </div>
-                <div tabindex="0" class="form__item form__item--checkbox">
+                <div class="form__item form__item--checkbox">
                   <input class="form__checkbox" id="vitamins" type="checkbox" name="additional">
-                  <label for="vitamins" class="form__label form__label--checkbox">Витамины</label>
+                  <label tabindex="0" for="vitamins" class="form__label form__label--checkbox">Витамины</label>
                 </div>
               </div>
             </div>
@@ -130,120 +130,28 @@
           </div>
         </form>
         <section class="address">
-          <div class="address__inner">
-            <p class="address__invitation">
-              Приглашаем <br>к сотрудничеству дилеров!
-            </p>
-            <p class="address__details">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-            </p>
+          <div class="address__wrapper">
+            <div class="address__inner">
+              <p class="address__invitation">
+                Приглашаем <br>к сотрудничеству дилеров!
+              </p>
+              <div class="address__details">
+                <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
+                <p class="address__city">Санкт-Петербург</p>
+              </div>
+            </div>
           </div>
         </section>
-        <!--
-        <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="personal">
-            <div class="personal__inner">
-              <ul class="personal__list">
-                <li class="personal__item">
-                  <label class="personal__label" for="name">ИМЯ*</label><br>
-                  <input class="personal__input" type="text" name="name" placeholder="БАРСИК" id="name" required="">
-                </li>
-                <li class="personal__item">
-                  <label class="personal__label" for="weight">ВЕС (КГ)*</label><br>
-                  <input class="personal__input" type="text" name="weight" placeholder="7*" id="weight" required="">
-                </li>
-                <li class="personal__item">
-                  <label class="personal__label" for="age">ВОЗРАСТ (ЛЕТ)*</label><br>
-                  <input class="personal__input" type="text" id="age" name="age" placeholder="7">
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="purpose">
-            <div class="purpose__inner">
-              <ul class="purpose__list">
-                <li class="purpose__item">
-                  <input class="purpose__radio" type="radio" id="weightloss" name="purpose" value="weightloss" checked="">
-                  <label for="weightloss"><span class="purpose__text">Похудение</span></label>
-                </li>
-                <li class="purpose__item">
-                  <input class="purpose__radio" type="radio" id="weightgain" name="purpose" value="weightgain">
-                  <label for="weightgain"><span class="purpose__text">Набор массы</span></label>
-                </li>
-                <li class="purpose__item">
-                  <input class="purpose__radio" type="radio" id="noinfo" name="purpose" value="noinfo">
-                  <label for="noinfo"><span class="purpose__text">Не знаю (нужен ваш совет)</span></label>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="contacts">
-            <div class="contacts__inner">
-              <h2 class="form__title">Контактные данные <br>(владельца кота)</h2>
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <label class="contacts__label" for="name">E-mail</label>
-                  <input class="contacts__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" id="e-mail" required="">
-                </li>
-                <li class="contacts__item">
-                  <label class="contacts__label" for="lastname">Телефон</label>
-                  <input class="contacts__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="phone">
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="textarea">
-            <div class="textarea__inner">
-              <p class="form__title">Комментарий</p>
-              <div class="textarea__inner">
-                <textarea class="textarea__text" placeholder="Расскажите обо всех повадках кота" name="text"></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="additional">
-            <div class="additional__inner">
-              <p class="additional__legend">Дополнительно</p>
-              <div class="additional__list">
-                <div class="additional__wrapper">
-                <div tabindex="0" class="additional__item">
-                  <input class="additional__checkbox" id="shark" type="checkbox" name="additional" checked>
-                  <label for="shark"><span class="additional__text">Сахарозаменитель</span></label>
-                </div>
-                <div tabindex="0" class="additional__item">
-                  <input class="additional__checkbox" id="beach" type="checkbox" name="additional" checked>
-                  <label for="beach"><span class="additional__text">Питьевая вода</span></label>
-                </div>
-                </div>
-                <div class="additional__wrapper">
-                <div tabindex="0" class="additional__item">
-                  <input class="additional__checkbox" id="norris" type="checkbox" name="additional">
-                  <label for="norris"><span class="additional__text">Молоко</span></label>
-                </div>
-                <div tabindex="0" class="additional__item">
-                  <input class="additional__checkbox" id="souvenirs" type="checkbox" name="additional">
-                  <label for="souvenirs"><span class="additional__text">Витамины</span></label>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="send">
-            <div class="send__inner">
-              <div class="send__form">
-              <button class="send__button">
-                <span class="send__desc">Отправить форму</span>
-              </button>
-              <div class="send__required">* — ОБЯЗАТЕЛЬНЫЕ <span class="send__required send__required--hidden">ДЛЯ ЗАПОЛНЕНИЯ </span> ПОЛЯ</div>
-              </div>
-            </div>
-          </div>
-        </form>-->
       </main>
       <footer class="page-footer">
+        <div class="page-footer__map">
+          <iframe class="page-footer__iframe page-footer__iframe--with-js page-footer__map--with-js" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716143494!3d59.93871916905415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558538166240!5m2!1sru!2sru" width="400" height="300" style="border:0" allowfullscreen=""></iframe>
+        </div>
         <div class="page-footer__wrapper">
-          <a class="page-footer__logo">
-            <a class="page-footer__logo-link"><img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="23" alt="Cat Energy"></a>
-          </a>
+          <div class="page-footer__logo-wrapper">
+            <a class="page-footer__logo-link"><img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="23" alt="Cat Energy">
+            </a>
+          </div>
           <div class="social">
             <ul class="social__list">
               <li class="social__item">

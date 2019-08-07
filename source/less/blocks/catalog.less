@@ -1,39 +1,41 @@
 .catalog__inner {
   .wrapper();
-  width: 100%;
 }
 
 .catalog__list {
   .list();
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
   margin: 0 -30px;
-  padding: 0;
-  align-items: baseline;
+
+  @media (min-width: @tablets) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
 
   @media (min-width: @desktops) {
     margin: 0 -40px;
-    display: flex;
-    flex-wrap: wrap;
   }
 }
 
 .catalog__item {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 320px; // если нужна фикс ширина карточки то 1 меняешь на 0, сейчас они тянутся, но не сжимаются меньше 320px
-  min-height: 209px;
-  padding: 0 30px;
-  border-top: solid 1px #ededed;
+  @media (min-width: @mobiles) {
+  //  flex: 1 0 320px; если нужна фикс ширина карточки то 1 меняешь на 0, сейчас они тянутся, но не сжимаются меньше 320px
+    padding: 0 30px;
+    min-height: 209px;
+    border-top: solid 1px #ededed;
 
   @media (min-width: @tablets) {
     border-top: none;
+    margin-left: 0;
+    flex: 0 0 50%;
   }
 
   @media (min-width: @desktops) {
     padding: 0 40px;
-    flex-basis: 245px;
+    flex: 0 0 25%;
+    }
   }
 }
 /*
@@ -66,4 +68,11 @@
   line-height: 60px;
   font-weight: 400;
   text-align: left;
+
+  @media (min-width: @tablets) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 38px;
+    margin-bottom: 85px;
+  }
 }

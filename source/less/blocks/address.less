@@ -1,24 +1,88 @@
 .address {
   background-color: #f2f2f2;
   padding: 13px 0;
+
+  @media (min-width: @tablets) {
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: @desktops) {
+    position: absolute;
+    z-index: 1;
+    transform: translate(33px, 95px);
+    width: 44%;
+  }
+}
+
+.address__wrapper {
+  .wrapper();
 }
 
 .address__inner {
-  .wrapper();
   display: flex;
-  flex: 1 0 50%;
 
+  @media (min-width: @tablets) {
+    padding: 0 40px;
+    justify-content: space-between;
+  }
 }
 
 .address__invitation {
+  @media (max-width: @mobiles-max) {
+   flex: 0 0 50%;
+ }
+
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  flex: 1 0 50%;
+
+  @media (min-width: @tablets) {
+    font-size: 20px;
+    line-height: 25px;
+    padding-left: 0;
+    width: 154px;
+  }
 }
 
 .address__details {
   font-family: "ArialMT", sans-serif;
   font-size: 14px;
   line-height: 20px;
+
+  @media (max-width: @mobiles-max) {
+   flex: 0 0 50%;
+  }
+
+  @media (min-width: @tablets) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 155px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktops) {
+    width: 155px;
+    text-align: left;
+  }
+}
+
+.address__street {
+  @media (max-width: @mobiles-max) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktops) {
+    margin: 20px 0;
+  }
+}
+
+.address__city {
+  @media (max-width: @mobiles-max) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktops) {
+    margin: 20px 0;
+  }
 }

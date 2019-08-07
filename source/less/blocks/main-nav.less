@@ -3,11 +3,26 @@
   margin-left: -20px;
   margin-right: -20px;
   }
+
+  @media (min-width: @tablets) {
+    width: 60%;
+    transform: translateX(-8px);
+  }
+
+  @media (min-width: @desktops) {
+    width: 38%;
+    transform: translateX(-8px);
+  }
 }
 
 .main-nav__list {
   .list();
   text-align: center;
+
+  @media (min-width: @tablets) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__link {
@@ -23,6 +38,11 @@
     line-height: 20px;
     font-weight: 400;
   }
+
+  @media (min-width: @desktops) {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .main-nav__item {
@@ -31,7 +51,11 @@
   padding: 20px 0;
 
   @media (min-width: @tablets) {
-    padding: 20px 20px;
+    padding: 20px 0;
+  }
+
+  @media (min-width: @desktops) {
+    padding: 20px 36px 20px 0;
   }
 }
 
