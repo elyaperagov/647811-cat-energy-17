@@ -10,10 +10,21 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
-    background-image: linear-gradient(to bottom,transparent 0,transparent 12.5%, #f2f2f2 12.5%,#f2f2f2 100%);
+    background-image: linear-gradient(to bottom,transparent 0,transparent 9.5%, #f2f2f2 9.5%,#f2f2f2 100%);
 
     &--big {
-      background-image: linear-gradient(to bottom,transparent 0,transparent 19%, #f2f2f2 19%,#f2f2f2 100%);
+      background-image: linear-gradient(to bottom,transparent 0,transparent 15.5%, #f2f2f2 15.5%,#f2f2f2 100%);
+    }
+  }
+
+  &--more {
+    text-align: center;
+    background-image: none;
+    border: 1px solid #f2f2f2;
+
+    @media (min-width: @tablets) {
+    min-height: 437px;
+    padding: 30px 35px 40px;
     }
   }
 }
@@ -30,8 +41,21 @@
 .product__desc {
   flex-grow: 1;
 
+  &--more {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+    padding: 8px 0;
+
+    @media (min-width: @tablets) {
+      font-size: 16px;
+      transform: translateY(83px);
+    }
+  }
+
   @media (min-width: @tablets) {
-    padding: 0 40px 28px;
+    padding: 0 40px 26px;
   }
 }
 
@@ -61,6 +85,41 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 27px;
+  }
+
+  &--more {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 auto;
+    position: relative;
+    padding: 77px 0 0;
+
+    @media (min-width: @tablets) {
+      font-size: 20px;
+      line-height: 20px;
+      width: 134px;
+      transform: translateY(57px);
+    }
+
+    &::before {
+      content: "";
+      margin: auto;
+      position: absolute;
+      top: -20px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      opacity: 0.2;
+      background: #ffffff url("../img/icon-plus.svg") no-repeat center;
+
+      @media (min-width: @tablets) {
+        width: 61px;
+        height: 61px;
+        top: -140px;
+      }
+    }
   }
 }
 
@@ -92,12 +151,17 @@
   line-height: 20px;
   background-color: #68b738;
 
+  &--more {
+    color: #444444;
+    background-color: #f2f2f2;
+  }
+
   @media (min-width: @tablets) {
     width: 77%;
     margin: 0 auto;
   }
 }
-
+/*
 .product-more {
   text-align: center;
 }
@@ -135,4 +199,4 @@
 .product-more__btn {
   color: #444444;
   background-color: #f2f2f2;
-}
+}*/
