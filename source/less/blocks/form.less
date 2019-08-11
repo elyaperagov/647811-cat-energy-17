@@ -4,11 +4,11 @@
 
 .form__container {
   @media (min-width: @tablets) {
-  padding: 0 40px;
+    padding: 0 40px;
   }
 
   @media (min-width: @desktops) {
-  padding: 0;
+    padding: 0;
   }
 }
 
@@ -69,7 +69,6 @@
   }
 
   &--additional {
-
     @media (min-width: @tablets) {
       display: flex;
       flex-wrap: wrap;
@@ -138,28 +137,28 @@
     }
   }
 
-    @media (min-width: @tablets) {
-      &::before {
-        content: "";
-        position: absolute;
-        background-color: #68b738;
-        width: 100vw;
-        z-index: -1;
-        height: 3px;
-        right: 0;
-        transform: translateY(22px);
-      }
+  @media (min-width: @tablets) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      width: 100vw;
+      z-index: -1;
+      height: 3px;
+      right: 0;
+      transform: translateY(22px);
     }
+  }
 
   &--contacts {
     padding-right: 0;
 
     @media (min-width: @tablets) {
-    padding-top: 77px;
+      padding-top: 77px;
     }
 
     @media (min-width: @desktops) {
-    padding-top: 0;
+      padding-top: 0;
     }
   }
 
@@ -245,7 +244,7 @@
     }
   }
 
-  &--email{
+  &--email {
     @media (min-width: @desktops) {
       flex: 0 0 50%;
       max-width: 50%;
@@ -305,14 +304,6 @@
       padding: 0 20px;
     }
   }
-/*
-  &--email::after {
-    content: "";
-    position: absolute;
-    background: url("../img/icon-mail.svg");
-    width: 18px;
-    height: 14px;
-  }*/
 }
 
 /*ОГЛАВЛЕНИЕ*/
@@ -526,7 +517,7 @@ input[type="checkbox"] {
   border: solid 1px #cdcdcd;
   left: 0;
 
-  @media (min-width: @tablets){
+  @media (min-width: @tablets) {
     width: 40px;
     height: 40px;
     top: -10px;
@@ -538,8 +529,8 @@ input[type="checkbox"] {
   position: absolute;
   width: 22px;
   height: 17px;
-  background-color: #68b738;
-  background: url(../img/icon-tick.svg) center no-repeat;
+  //background-color: #68b738;
+  background: url("../img/icon-tick.svg") #68b738 center no-repeat;
   left: -5px;
   margin: 9px;
 
@@ -614,16 +605,16 @@ input[type="checkbox"] {
 
 .form__inner-button {
   @media (min-width: @tablets) {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 15px;
-  align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    align-items: center;
   }
 
   @media (min-width: @desktops) {
-  padding-top: 22px;
+    padding-top: 22px;
   }
 }
 /*

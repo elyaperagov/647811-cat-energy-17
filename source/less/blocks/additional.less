@@ -1,5 +1,11 @@
 .additional__list {
   .list();
+
+  @media (min-width: @tablets) {
+    border-top: solid 1px #ededed;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+  }
 }
 
 .additional__wrapper {
@@ -16,8 +22,9 @@
   margin-bottom: 13px;
 
   @media (min-width: @tablets) {
-    border: solid 1px #ededed;
-    padding: 25px 38px;
+    border-top: none;
+    border-bottom: solid 1px #ededed;
+    padding: 26px 38px;
     margin-bottom: 0;
   }
 }
@@ -26,7 +33,7 @@
   position: relative;
   font-size: 24px;
   line-height: 24px;
-  margin-top: 30px;
+  margin-top: 27px;
   margin-bottom: 33px;
   background: #ffffff;
   width: 250px;
@@ -91,11 +98,22 @@
   line-height: 14px;
   width: 100%;
   margin-bottom: 15px;
+
+  @media (min-width: @tablets) {
+    font-size: 16px;
+    line-height: 20px;
+    width: auto;
+    margin-bottom: 23px;
+    margin-top: 3px;
+  }
 }
 
 .additional__row {
   display: flex;
-  justify-content: space-between;
+
+  @media (min-width: @tablets) {
+    justify-content: flex-end;
+  }
 }
 
 .additional__item-inner {
@@ -105,36 +123,11 @@
   }
 }
 
-.banner {
-  border-top: solid 1px #ededed;
-  padding-top: 39px;
-  padding-bottom: 35px;
-}
-
-.banner__inner svg {
-  fill: #ffffff;
-  margin-top: 65px;
-}
-
-.banner__inner {
-  width: 100%;
-  min-height: 289px;
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-}
-
-.banner__desc {
-  font-family: "ArialMT", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  width: 161px;
-  margin: 0 auto;
-  padding-top: 56px;
-}
-
 .additional__cell {
-  //flex-basis: 50%;
+  @media (min-width: @tablets) {
+    &--price {
+      width: 92px;
+      text-align: right;
+    }
+  }
 }
