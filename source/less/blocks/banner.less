@@ -1,0 +1,53 @@
+.banner {
+  border-top: solid 1px #ededed;
+  padding-top: 39px;
+  padding-bottom: 35px;
+
+  @media (min-width: @tablets) {
+    padding-top: 68px;
+    padding-bottom: 77px;
+  }
+}
+
+.banner__inner svg {
+  fill: #ffffff;
+  margin-top: 65px;
+}
+
+.banner__inner {
+  width: 100%;
+  min-height: 289px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  @media (min-width: @tablets) {
+    min-height: 200px;
+    display: flex;
+    padding-left: 91px;
+    padding-right: 107px;
+    justify-content: space-between;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  @media (min-width: @desktops) {
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+}
+
+.banner__desc {
+  font-family: "ArialMT", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  width: 161px;
+  margin: 0 auto;
+  padding-top: 56px;
+
+  @media (min-width: @tablets) {
+    margin: 0;
+    text-align: left;
+    padding-top: 73px;
+  }
+}

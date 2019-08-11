@@ -1,0 +1,133 @@
+.additional__list {
+  .list();
+
+  @media (min-width: @tablets) {
+    border-top: solid 1px #ededed;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+  }
+}
+
+.additional__wrapper {
+  .wrapper();
+
+  @media (min-width: @tablets) {
+    padding-top: 35px;
+  }
+}
+
+
+.additional__item {
+  border-top: solid 1px #ededed;
+  margin-bottom: 13px;
+
+  @media (min-width: @tablets) {
+    border-top: none;
+    border-bottom: solid 1px #ededed;
+    padding: 26px 38px;
+    margin-bottom: 0;
+  }
+}
+
+.additional__title {
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  margin-top: 27px;
+  margin-bottom: 33px;
+  background: #ffffff;
+  width: 250px;
+  padding-right: 24px;
+
+  @media (min-width: @tablets) {
+    font-size: 36px;
+    line-height: 36px;
+    width: 410px;
+    padding-left: 40px;
+    margin-bottom: 80px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #68b738;
+    width: 100vw;
+    z-index: -1;
+    height: 3px;
+    left: 0;
+    transform: translateY(14px);
+
+    @media (min-width: @tablets) {
+      transform: translateY(22px);
+    }
+  }
+
+  @media (min-width: @tablets) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      width: 100vw;
+      z-index: -1;
+      height: 3px;
+      right: 0;
+      transform: translateY(14px);
+
+      @media (min-width: @tablets) {
+        transform: translateY(22px);
+      }
+    }
+  }
+}
+
+.additional__name {
+  font-size: 16px;
+  line-height: 16px;
+  margin: 14px 0 12px;
+
+  @media (min-width: @tablets) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
+}
+
+.additional__contents {
+  font-family: "ArialMT", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  width: 100%;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablets) {
+    font-size: 16px;
+    line-height: 20px;
+    width: auto;
+    margin-bottom: 23px;
+    margin-top: 3px;
+  }
+}
+
+.additional__row {
+  display: flex;
+
+  @media (min-width: @tablets) {
+    justify-content: flex-end;
+  }
+}
+
+.additional__item-inner {
+  @media (min-width: @tablets) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.additional__cell {
+  @media (min-width: @tablets) {
+    &--price {
+      width: 92px;
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+.product {
+  font-size: 30px;
+  position: relative;
+  /*display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;*/
+
+  @media (min-width: @tablets) {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    background: #f2f2f2;
+    height: 431px;
+    justify-content: flex-end;
+    background-image: linear-gradient(to bottom, transparent 0, transparent 77px, #f2f2f2 77px, #f2f2f2 100%);
+
+    //  &--big {
+    //    background-image: linear-gradient(to bottom, transparent 0, transparent 15.5%, #f2f2f2 15.5%,#f2f2f2 100%);
+    //  }
+  }
+}
+
+.product__background {
+  //background-color: #f2f2f2;
+}
+
+
+.product__inner {
+  display: flex;
+
+  @media (min-width: @tablets) {
+    flex-direction: column;
+  }
+}
+
+.product__desc {
+  flex-grow: 1;
+
+  @media (min-width: @tablets) {
+    padding: 0 40px 26px;
+  }
+}
+
+
+.product__contents {
+  width: 100%;
+  font-family: "ArialMT", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: @tablets) {
+    font-size: 16px;
+  }
+}
+
+.product__title {
+  font-size: 16px;
+  line-height: 20px;
+  width: 74px;
+  margin-top: 20px;
+  margin-bottom: 14px;
+
+  @media (min-width: @tablets) {
+    margin: 0 auto;
+    width: 130px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 27px;
+  }
+}
+
+.product__picture-wrapper {
+  text-align: center;
+
+  @media (min-width: @tablets) {
+    padding-bottom: 40px;
+    margin-top: -40px;
+  }
+}
+/*
+.product__cell {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}*/
+
+.product__row {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablets) {
+    padding-bottom: 16px;
+  }
+}
+
+/*
+.product-more {
+  text-align: center;
+}
+
+.product-more__title {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  position: relative;
+  padding: 77px 0 0;
+}
+
+.product-more__title::before {
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  opacity: 0.2;
+  background: #ffffff url("../img/icon-plus.svg") no-repeat center;
+}
+
+.product-more__desc {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  padding: 8px 0;
+}
+
+.product-more__btn {
+  color: #444444;
+  background-color: #f2f2f2;
+}*/

@@ -1,9 +1,35 @@
 .btn {
   font-family: "Oswald", sans-serif;
   width: 100%;
+  padding: 10px 0;
   background-color: #68b738;
   border: none;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 10px 65px;
+
+  &--product {
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #68b738;
+
+    @media (min-width: @tablets) {
+      width: 77%;
+      margin: 0 auto;
+    }
+  }
+
+  &--additional {
+    @media (min-width: @tablets) {
+      width: 100%;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &--more {
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+    background-color: #f2f2f2;
+  }
 }
