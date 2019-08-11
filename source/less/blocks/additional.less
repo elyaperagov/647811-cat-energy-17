@@ -4,12 +4,22 @@
 
 .additional__wrapper {
   .wrapper();
+
+  @media (min-width: @tablets) {
+    padding-top: 35px;
+  }
 }
 
 
 .additional__item {
   border-top: solid 1px #ededed;
-  margin-bottom: 17px;
+  margin-bottom: 13px;
+
+  @media (min-width: @tablets) {
+    border: solid 1px #ededed;
+    padding: 25px 38px;
+    margin-bottom: 0;
+  }
 }
 
 .additional__title {
@@ -25,7 +35,9 @@
   @media (min-width: @tablets) {
     font-size: 36px;
     line-height: 36px;
-    width: 362px;
+    width: 410px;
+    padding-left: 40px;
+    margin-bottom: 80px;
   }
 
   &::after {
@@ -37,6 +49,10 @@
     height: 3px;
     left: 0;
     transform: translateY(14px);
+
+    @media (min-width: @tablets) {
+      transform: translateY(22px);
+    }
   }
 
   @media (min-width: @tablets) {
@@ -49,6 +65,10 @@
       height: 3px;
       right: 0;
       transform: translateY(14px);
+
+      @media (min-width: @tablets) {
+        transform: translateY(22px);
+      }
     }
   }
 }
@@ -57,6 +77,12 @@
   font-size: 16px;
   line-height: 16px;
   margin: 14px 0 12px;
+
+  @media (min-width: @tablets) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
 }
 
 .additional__contents {
@@ -70,6 +96,13 @@
 .additional__row {
   display: flex;
   justify-content: space-between;
+}
+
+.additional__item-inner {
+  @media (min-width: @tablets) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .banner {
