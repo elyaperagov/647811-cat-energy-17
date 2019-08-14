@@ -6,6 +6,13 @@
     border-left: 1px solid #ededed;
     border-right: 1px solid #ededed;
   }
+
+  @media (min-width: @desktops) {
+    border-left: none;
+    border-right: none;
+    width: 895px;
+    margin-right: 80px;
+  }
 }
 
 .additional {
@@ -16,7 +23,7 @@
 
   @media (min-width: @desktops) {
     display: flex;
-    justify-content: center;
+    //justify-content: space-between;
   }
 }
 
@@ -27,7 +34,7 @@
   }
 
   @media (min-width: @desktops) {
-    width: 895px;
+    margin: 0 auto;
   }
 }
 
@@ -68,6 +75,12 @@
     width: 410px;
     padding-left: 40px;
     margin-top: 62px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: @tablets) {
+    padding-left: 0;
+    margin-top: 75px;
     margin-bottom: 45px;
   }
 
@@ -114,6 +127,10 @@
     line-height: 20px;
     margin: 0;
   }
+
+  @media (min-width: @desktops) {
+    width: 325px;
+  }
 }
 
 .additional__contents {
@@ -130,6 +147,11 @@
     margin-bottom: 23px;
     margin-top: 3px;
   }
+
+  @media (min-width: @desktops) {
+    margin: 0;
+    width: 300px;
+  }
 }
 
 .additional__row {
@@ -139,12 +161,20 @@
   @media (min-width: @tablets) {
     justify-content: flex-end;
   }
+
+  @media (min-width: @desktops) {
+    justify-content:flex-start;
+  }
 }
 
 .additional__item-inner {
   @media (min-width: @tablets) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktops) {
+    align-items: center;
   }
 }
 
@@ -153,6 +183,17 @@
     &--price {
       width: 92px;
       text-align: right;
+
+      @media (min-width: @desktops) {
+        width: auto;
+        text-align: left;
+      }
+    }
+
+    &--volume {
+      @media (min-width: @desktops) {
+        width: 245px;
+      }
     }
   }
 }

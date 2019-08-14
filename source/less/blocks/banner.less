@@ -9,6 +9,7 @@
   }
 
   @media (min-width: @desktops) {
+    width: 245px;
     padding-top: 35px;
     padding-bottom: 77px;
   }
@@ -45,6 +46,9 @@
   }
 
   @media (min-width: @desktops) {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
     min-height: 289px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
 
@@ -67,5 +71,11 @@
     margin: 0;
     text-align: left;
     padding-top: 73px;
+
+    @media (min-width: @desktops) {
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 73px;
+    }
   }
 }
