@@ -1,5 +1,5 @@
 .index-header {
-  background-color: #63a73a;
+  //background-color: #63a73a;
 
   @media (min-width: @tablets) {
     background: none;
@@ -17,6 +17,7 @@
 .index-header__title {
   width: 250px;
   font-size: 36px;
+  padding-top: 29px;
   font-weight: normal;
   line-height: 36px;
   text-align: center;
@@ -36,6 +37,7 @@
   line-height: 14px;
   text-align: center;
   color: #ffffff;
+  margin-top: 24px;
 
   @media (min-width: @tablets) {
     color: #000000;
@@ -45,10 +47,21 @@
 }
 
 .index-header__background {
+  position: relative;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.index-header__background::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 305px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   z-index: -1;
+  background-color: #63a73a;
 
   @media (min-width: @tablets) {
     background: none;
@@ -63,22 +76,10 @@
   }
 }
 
-.index-header__btn {
-  padding: 10px 65px;
-  width: 100%;
-
-  @media (min-width: @tablets) {
-    content: "";
-    position: absolute;
-    width: 245px;
-    padding: 15px 29px;
-    top: 180px;
-  }
-}
-
 .index-header__image {
   display: block;
   text-align: center;
+  padding-top: 15px;
 }
 /*
 .index-header__image {
