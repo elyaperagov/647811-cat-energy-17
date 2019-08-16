@@ -1,6 +1,5 @@
 .programs__inner {
   .wrapper();
-  padding-top: 20px;
 }
 
 .programs__list {
@@ -13,7 +12,8 @@
   position: relative;
   background: #f2f2f2;
   z-index: -2px;
-  padding: 22px 20px;
+  padding: 19px 20px;
+  margin-top: 20px;
 }
 
 .programs__title {
@@ -23,6 +23,7 @@
   color: #111111;
   display: inline-block;
   text-transform: uppercase;
+  margin: 10px 0 10px 70px;
 }
 
 .programs__about {
@@ -30,12 +31,32 @@
   line-height: 18px;
   text-align: left;
   color: #444444;
+  margin: 0;
+  padding: 20px 0 22px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 15px
 }
 
 .programs__img {
-  display: inline-block;
+  content: "";
+  position: absolute;
   background-color: #68b738;
   width: 50px;
   height: 51px;
   border-radius: 50%;
+  padding-left: 9px;
+  margin-right: 15px;
+  margin-left: 3px;
+}
+
+.programs__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.programs__svg {
+  &--gain {
+    transform: translate(-27%, 50%);
+  }
 }
