@@ -1,56 +1,140 @@
 .example {
-  .wrapper();
+  background: #f2f2f2;
+
+  @media (min-width: @tablets) {
+    background: #ffffff;
+  }
 }
 
 .example__wrapper {
-  background: #f2f2f2;
+  .wrapper();
+  margin-top: 33px;
+
+  @media (min-width: @tablets) {
+    margin-top: 18px;
+  }
 }
 
 .example__title {
   font-size: 36px;
   font-weight: normal;
   line-height: 60px;
+  margin: 0;
+  padding-top: 18px;
+
+  @media (min-width: @tablets) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 0;
+  }
 }
 
 .example__desc {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  margin-top: 22px;
+  margin-bottom: 24px;
+
+  @media (min-width: @tablets) {
+    width: 97%;
+    margin-bottom: 51px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 65px;
+  }
+}
+
+.example__desc br {
+  @media (min-width: @tablets) {
+    display: none;
+  }
+}
+
+.example__info {
+  @media (min-width: @tablets) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__data-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (min-width: @tablets) {
+    flex-basis: 366px;
+    align-items: center;
+  }
 }
 
 .example__data {
   text-align: center;
-  border-radius: 3px;
-  border: solid 1px #cdcdcd;
-  width: 124px;
-  min-height: 56px;
 }
 
 .example__numbers {
   font-size: 24px;
   line-height: 24px;
-  margin: 17px 0;
+  width: 124px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
+  margin: 0px;
+
+  @media (min-width: @tablets) {
+    width: 162px;
+    padding-top: 16px;
+    padding-bottom: 19px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.example__price {
+  @media (min-width: @tablets) {
+    margin-top: 10px;
+  }
 }
 
 .example__details {
   font-family: "Arial", sans-serif;
-  width: 54px;
+  width: 82px;
   font-size: 12px;
   line-height: 12px;
   margin: 0 auto;
-  transform: translateY(10px);
+  transform: translateY(-11px);
   z-index: 1;
   background: #f2f2f2;
+
+  @media (min-width: @tablets) {
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+    width: auto;
+  }
 }
 
-.example__progress {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.example__money {
+  line-height: 14px;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 8px;
+  margin-bottom: 0;
+  white-space: nowrap;
+
+  @media (min-width: @tablets) {
+    line-height: 30px;
+    text-align: right;
+    font-size: 20px;
+  }
+}
+
+.example__money br {
+  @media (max-width: @mobiles-max) {
+    display: none;
+  }
 }
