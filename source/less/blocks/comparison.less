@@ -16,16 +16,24 @@
 
 .comparison__img {
     &--before {
+      @media (min-width: @tablets) {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       max-width: 100%;
-      clip: rect(auto, 385px, auto, auto);
+      clip: rect(auto, 345px, auto, auto);
       z-index: 2;
+      margin: 0 auto;
+
+      @media (min-width: @desktops) {
+        clip: rect(auto, 385px, auto, auto);
+      }
     }
+  }
 
     &--after {
+      @media (min-width: @tablets) {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -33,6 +41,12 @@
       max-width: 100%;
       z-index: 1;
       clip: rect(auto, auto, auto, 345px);
+      margin: 0 auto;
+
+      @media (min-width: @desktops) {
+        clip: rect(auto, 385px, auto, auto);
+      }
+    }
   }
 }
 
@@ -52,6 +66,14 @@
   border: solid 1px #cdcdcd;
   background-color: #ffffff;
   padding: 3px;
+  position: relative;
+
+  @media (min-width: @tablets) {
+    height: 6px;
+    margin: 0 25px;
+    background: #d9d9d9;
+    width: 100%;
+  }
 }
 
 .comparison__toggle {
@@ -59,6 +81,33 @@
   height: 6px;
   border-radius: 3px;
   background-color: #68b738;
+
+  @media (min-width: @tablets) {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 50%;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #dcdcdc;
+    transform: translateY(-17px);
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: #68b738;
+      z-index: 10;
+      border-radius: 50%;
+      display: block;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
 }
 
 .comparison__range {
