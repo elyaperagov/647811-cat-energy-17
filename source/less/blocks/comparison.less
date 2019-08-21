@@ -1,9 +1,9 @@
 .comparison {
   background: #f2f2f2;
+  .wrapper();
 }
 
 .comparison__images {
-  .wrapper();
   padding-top: 40px;
   position: relative;
   min-height: 232px;
@@ -15,6 +15,7 @@
 }
 
 .comparison__img {
+
     &--before {
       @media (min-width: @tablets) {
       position: absolute;
@@ -57,6 +58,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: @tablets) {
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 15px 34px 75px 34px;;
+  }
 }
 
 .comparison__range-bar {
@@ -70,9 +77,9 @@
 
   @media (min-width: @tablets) {
     height: 6px;
-    margin: 0 25px;
     background: #d9d9d9;
     width: 100%;
+    margin: 0 25px;
   }
 }
 
@@ -120,4 +127,10 @@
   font-size: 16px;
   line-height: 20px;
   padding: 0 20px;
+
+  @media (min-width: @tablets) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+  }
 }
