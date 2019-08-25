@@ -8,10 +8,14 @@
   @media (min-width: @tablets) {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
+    margin-right: -30px;
   }
 
   @media (min-width: @desktops) {
     flex-wrap: nowrap;
+    margin-left: -40px;
+    margin-right: -40px;
   }
 }
 
@@ -79,19 +83,22 @@
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 86px;
+    padding-left: 30px;
+    padding-right: 30px;
 
     &::after {
-      left: 116px;
+      left: 145px;
       top: 88px;
     }
+  }
 
-    &:nth-child(even) {
-      padding-left: 32px;
+  @media (min-width: @desktops) {
+    padding-left: 40px;
+    padding-right: 40px;
 
-      &::after {
-        left: 140px;
-        top: 88px;
-      }
+    &::after {
+      left: 156px;
+      top: 93px;
     }
   }
 
