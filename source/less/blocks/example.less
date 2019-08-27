@@ -28,7 +28,7 @@
   margin-top: 33px;
 
   @media (min-width: @tablets) {
-    margin-top: 18px;
+    margin-top: 14px;
   }
 
   @media (min-width: @desktops) {
@@ -163,7 +163,7 @@
   text-align: center;
   font-size: 14px;
   text-transform: uppercase;
-  margin-top: 8px;
+  margin-top: 11px;
   margin-bottom: 0;
   white-space: nowrap;
 
@@ -171,6 +171,7 @@
     line-height: 30px;
     text-align: right;
     font-size: 20px;
+    margin-top: 8px;
   }
 
   @media (min-width: @desktops) {
@@ -180,7 +181,9 @@
 }
 
 .example__money span {
+  @media (min-width: @desktops) {
   padding-right: 60px;
+  }
 }
 
 .example__money br {
@@ -205,7 +208,7 @@
 .example__images {
   padding-top: 40px;
   position: relative;
-  min-height: 232px;
+  min-height: 280px;
   text-align: center;
 
   @media (min-width: @tablets) {
@@ -222,15 +225,17 @@
 .example__img {
 
     &--before {
-      @media (min-width: @tablets) {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       max-width: 100%;
-      clip: rect(auto, 345px, auto, auto);
       z-index: 2;
       margin: 0 auto;
+      clip: rect(auto, 345px, auto, auto);
+
+      @media (min-width: @tablets) {
+      clip: rect(auto, 345px, auto, auto);
 
       @media (min-width: @desktops) {
         clip: rect(auto, 385px, auto, auto);
@@ -239,15 +244,17 @@
   }
 
     &--after {
-      @media (min-width: @tablets) {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       max-width: 100%;
       z-index: 1;
-      clip: rect(auto, auto, auto, 345px);
       margin: 0 auto;
+      clip: rect(auto, auto, auto, 345px);
+
+      @media (min-width: @tablets) {
+        clip: rect(auto, auto, auto, 345px);
 
       @media (min-width: @desktops) {
         clip: rect(auto, 385px, auto, auto);

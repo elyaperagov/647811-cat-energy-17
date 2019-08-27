@@ -24,7 +24,7 @@
   @media (min-width: @tablets) {
     margin-top: 0;
     display: flex;
-    padding: 74px 60px 62px 52px;
+    padding: 72px 60px 65px 56px;
     justify-content: space-between;
     margin-bottom: 30px;
   }
@@ -58,16 +58,12 @@
     white-space: nowrap;
   }
 }
-/*
-.programs__info {
-  @media (min-width: @tablets) {
 
-    }
-
-  @media (min-width: @desktops) {
-
+.programs__about br {
+  @media (max-width: @mobiles-max) {
+    display: none;
   }
-}*/
+}
 
 .programs__about {
   font-family: "Arial", sans-serif;
@@ -83,12 +79,19 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 30px;
+    max-width: 380px;
   }
 
   @media (min-width: @desktops) {
     border-bottom: none;
     padding: 64px 0 30px;
     margin-bottom: 0;
+  }
+
+  &--gain {
+    @media (min-width: @tablets) {
+      max-width: 345px;
+    }
   }
 }
 
